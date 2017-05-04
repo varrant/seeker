@@ -1,0 +1,319 @@
+// @import "../css/normalize.css";
+@import "./font.scss";
+@import "../sassCore-master/base.scss";
+
+
+$black: #555;
+$lightGray: #f5f5f5;
+$gray: #ebebeb;
+$darkGray: #999;
+$primaryColor: #00acff;
+$blue:#0068af;
+
+$titleHeight:36px;
+$paddingLeft: 16px;
+
+%font18{
+	font-size:18px;
+}
+
+%font16{
+	font-size:16px;
+}
+
+%font15{
+	font-size:15px;
+}
+
+%font14{
+	font-size:14px;
+}
+
+%font12{
+	font-size:12px;
+}
+
+%w100{
+	width:100%;
+}
+
+%floatLeft{
+	float:left;
+}
+
+%floatRight{
+	float:right;
+}
+
+%borderBox{
+	box-sizing: border-box
+}
+
+%textCenter{
+	text-align:center;
+}
+
+.mt0{
+	margin-top:0 !important;
+}
+
+.mt20{
+	margin-top:20px !important;
+}
+
+.mt10{
+	margin-top:10px !important;
+}
+
+.mb20{
+	margin-bottom:20px !important;
+}
+
+div{
+	@extend %borderBox;
+}
+
+.fontstyle{
+	@extend %textCenter;
+	@extend %font12;
+	color:$darkGray;
+}
+
+.public-title{
+	@extend %w100;
+	@extend %font18;
+	height:$titleHeight;
+	line-height:$titleHeight;
+	@extend %textCenter;
+	background-color: $gray;
+	color:$black;
+	margin-top:40px;
+}
+
+.footer-title{
+	background-color: $lightGray;
+	color:$darkGray;
+
+	span{
+		@extend %inline-block;
+		font-size:28px;
+		vertical-align: middle;
+		margin-top: -3px;
+	}
+
+	a{
+		color:$darkGray;
+	}
+}
+
+.footer-identify{
+	margin-top:20px;
+	@extend %clearfix;
+	padding-bottom:25px;
+	border-bottom:1px solid $lightGray;
+
+	.qq-logo{
+		width:60%;
+		@extend %floatLeft;	
+		padding: 0 15px 0 18px;
+		position:relative;
+		img{
+			width:100%;
+			height:100%;
+			margin-top:15%;
+		}
+	}
+
+	.qr-code{
+		width:38%;
+		@extend %floatLeft;
+
+		img{
+			width:100%;
+			min-width:101px;
+		}
+
+		p{
+			@extend .fontstyle;
+			margin-top:6px;
+
+		}
+		
+	}
+}
+
+.copyright{
+	@extend .fontstyle;
+	margin-top:12px;
+}
+
+.public-banner{
+	@extend %w100;
+	min-height:132px;
+
+}
+
+.min-height{
+	min-height:62px;
+}
+
+.public-p{
+	@extend %font16;
+	color: $black;
+	line-height: 200%;
+	margin-top:10px;
+
+}
+
+.public-triangle{
+	padding-left:$paddingLeft;
+			@extend %font16;
+			color: $primaryColor;
+
+			&:after{
+				content:"";
+				position:absolute;
+				left:0;
+				top:2px;
+				@include triangle(right, 9px, $primaryColor);
+			}
+}
+
+.about-qqjf{
+	.history{
+		position:relative;
+		margin-top:16px;
+
+		dd{
+			margin-top:10px;
+			padding-left:$paddingLeft;
+		}
+	}
+}
+
+.cooperation{
+	.partner{
+		margin-top:15px;
+		@extend %font15;
+		color:$blue;
+		-webkit-text-shadow:0 1px 2px rgba(255,255,255,0.31);
+		text-shadow:0 1px 2px rgba(255,255,255,0.31);
+		line-height:200%;
+
+		p{
+			@extend %textCenter;
+			white-space:nowrap;
+		}
+	}
+
+	.item{
+		margin-top:20px;
+
+		span{
+			@extend %inline-block;
+			@extend %font16;
+			color:$primaryColor;
+			i{
+				font-size:32px;
+				vertical-align:middle
+			}
+
+			.icon-net{
+				font-size:29px;
+			}
+		}
+
+		p{
+			@extend %font15;
+			color:$darkGray;
+			line-height:160%;
+			margin-top:10px;
+		}
+	}
+}
+
+.product-list{
+	.group{
+		margin-bottom:40px;
+	}
+
+	.head{
+		@extend %clearfix;
+	}
+
+	.product-name{
+		@include ellipsis;
+	}
+
+	.pull-left{
+		position:relative;
+		@extend %floatLeft;
+		width: calc(100% - 50px);
+		width: -webkit-calc(100% - 50px);
+	}
+
+	.pull-right{
+		@extend %floatRight;
+		color:$primaryColor;
+		@extend %font14;
+		width:50px;
+		
+		i{
+			@extend %inline-block;
+			width:8px;
+			height:8px;
+			border-top:2px solid $primaryColor;
+			border-right:2px solid $primaryColor;
+			transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+			-moz-transform:rotate(45deg);
+			-o-transform:rotate(45deg);
+		}
+	}
+
+	.description{
+		color:$darkGray;
+		line-height:180%;
+		margin-top:10px;
+		font-size:12px;
+	}	
+}
+
+.pubilc-introduction{
+	padding:10px;
+	background-color:$gray;
+	margin-top:10px;
+	.row{
+		@extend %w100;
+		@extend %clearfix;
+		&:nth-child(2){
+			margin-top:6px;
+		}
+	}
+	.item{
+		@extend %floatLeft;
+		color:$black;
+		@extend %font12;
+		
+		&:nth-child(1){
+			@include ellipsis(60%);
+
+		}
+		&:nth-child(2){
+			@include ellipsis(40%);
+
+		}
+	}
+}
+
+.product-details{
+	@extend %font15;
+	color:$black;
+
+	.details-p{
+		color:$darkGray;
+		line-height:26px;
+		-webkit-margin-before:0;
+		-webkit-margin-after:0;
+	}
+}

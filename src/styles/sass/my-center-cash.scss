@@ -1,0 +1,277 @@
+.my-center-cash {
+  .font-color .mint-cell-text {
+    color: #ff8903;
+    padding: 0;
+  }
+
+  .mention-way-left {
+    float: left;
+    height: 60px;
+    width: 24px;
+    padding: 20px;
+    text-align: center;
+    background: #4990e2;
+    color: #fff;
+  }
+
+  .mention-way-right {
+    float: left;
+    span {
+      display: block;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  .cash-mb {
+    margin-bottom: 10px;
+  }
+
+  .mytopbox {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+  }
+
+  .mytopboxline {
+    border-top: 1px solid #fd9329;
+    border-bottom: 1px solid #fd8e22;
+    width: 100%;
+  }
+
+  .mytopbox .info {
+    padding-top: 13px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .mytopbox .info .name {
+    font-size: 14px;
+    color: #999999;
+  }
+
+  .mytopbox .info .ico .fa-angle-right:before {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .mytopbox .cash {}
+
+  .mytopbox .info .cashboxs {
+    font-size: 40px;
+    color: #000000;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .mytopbox .info .cashboxs .sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .mytopbox .info .cashboxs input {
+    width:90%;
+    font-size: 40px;
+    color: #000000;
+    outline: none;
+    padding-left: 25px;
+    border: 0;
+  }
+
+  .mytopbox .info2 {
+    color: #999999;
+    font-size: 14px;
+    margin: 10px 16px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  .mytopbox .info2 .allcash {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #4a90e2;
+    font-size: 14px;
+  }
+
+  .cashbox2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+  }
+
+  .cashbox2 .cashbg {
+    background-color: #000000;
+    filter:alpha(opacity=50);
+    /*IE滤镜，透明度50%*/
+    -moz-opacity: 0.5;
+    /*Firefox私有，透明度50%*/
+    opacity: 0.5;
+    /*其他，透明度50%*/
+  }
+
+  .cashbox2 .contentbox {
+    width: 307px;
+    height: 367px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    margin-left: -153px;
+  }
+
+  .cashbox2 .cashbtn {
+    width: 52px;
+    height: 52px;
+    line-height: 43px;
+    text-align: center;
+    border: solid 1.5px #e6e6e6;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -26px;
+    top: 466px;
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  .cashbox2 .contentbox .title {
+    font-size: 17px;
+    color: #ff8903;
+    text-align: center;
+    height: 55px;
+    line-height: 55px;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-bottom: 2px solid #e5e5e5;
+  }
+
+  .cashbox2 .contentbox .word {
+    font-size: 13px;
+    color: #666666;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .cashbox2 .contentbox .word span {
+    font-weight: 600;
+  }
+
+  .box_bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .pay_box {
+    position: fixed;
+    width: 82%;
+    left: 9%;
+    height: 367px;
+    border-radius: 8px;
+    background-color: #fff;
+    top: 10%;
+  }
+
+  .deposit_word {
+    padding: 0 24px;
+    font-size: 13px;
+    color: #666;
+  }
+
+  .deposit_word > h3 {
+    font-family: PingFangSC;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    color: #ff8903;
+    border-bottom: solid 2px #e5e5e5;
+    height: 57px;
+    line-height: 57px;
+  }
+
+  .box_word h3 {
+    margin-top: 14px;
+  }
+
+  .box_word p {
+    margin-bottom: 20px;
+    line-height: 17px;
+  }
+
+  .guanbi {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    margin-left: -26px;
+  }
+
+  .pay_mode {
+    width: 100%;
+    height: 184px;
+    background-color: #fff;
+  }
+
+  .pay_mode h3 {
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+    line-height: 44px;
+    height: 44px;
+  }
+
+  .pay_mode ul {
+    text-align: center;
+    padding: 10px 15px 0 17px;
+  }
+
+  .pay_mode ul li {
+    position: relative;
+    height: 68px;
+    line-height: 68px;
+    font-family: PingFangSC;
+    font-size: 14px;
+  }
+
+  .mode_frist {
+    border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .pay_mode ul li img {
+    padding-bottom: 2px;
+  }
+
+  .pay_mode ul li .img_1 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+  }
+
+  .pay_mode h3 {
+    position: relative;
+  }
+
+  .pay_mode h3 img {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    margin-top: -9px;
+  }
+
+  .pay_mode ul li a {
+    display: block;
+    height: 68px;
+  }
+}

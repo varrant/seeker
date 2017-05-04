@@ -1,0 +1,300 @@
+@import "./mixin.scss";
+
+.index {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+  .mint-button::after{
+    background-color:transparent;
+  }
+
+  .introduce {
+    font-size: 12px;
+    color: #999999;
+    line-height: 15px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .banner {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  .mint-swipe-indicator {
+    width: 5px;
+    height: 5px;
+    opacity: 1;
+    background-color: rgba(255,255,255,0.6);
+  }
+
+  .index_nav {
+    .mint-button--default {
+      color: transparent;
+      height: auto;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+
+  .index_nav {
+    height: 65px;
+    background: #fff;
+  }
+
+  .index_nav h3 {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    color: #333333;
+    line-height: 0;
+  }
+
+  .index_nav li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .index_nav li a {
+    display: inline-block;
+    height: 90px;
+  }
+
+  .index_nav li img {
+    margin-top: 13px;
+    margin-bottom: 10px;
+  }
+
+  .index_list {
+    background: #fff;
+    margin-top: 10px;
+  }
+
+  .list_top {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #f0f0f1;
+    padding: 0 16px;
+  }
+
+  .list_top h3 {
+    float: left;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .list_top a {
+    float: right;
+    font-family: PingFang-SC;
+    font-size: 13px;
+    font-weight: 300;
+    color: #9b9b9b;
+  }
+
+  .list_top a img {
+    padding-bottom: 3px;
+    margin-left: 7px;
+  }
+
+  .list_li li {
+    height: 92px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    display: block;
+  }
+
+  .list_li .list_img {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 16px;
+    top: 11px;
+  }
+
+  .list_li .list_word {
+    padding-left: 90px;
+    position: relative;
+    padding-right: 16px;
+    padding-top: 10px;
+  }
+
+  .list_word h3 {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    height: 23px;
+    overflow: hidden;
+  }
+
+  .list_word h3 span {
+    font-size: 11px;
+  }
+
+  .price {
+    font-size: 20px !important;
+    color: #ff8903;
+    float: right;
+    line-height: 23px;
+  }
+
+  .list_word p {
+    font-size: 13px;
+    color: #999;
+    margin-top: 6px;
+    height: 17px;
+    overflow: hidden;
+  }
+
+  .list_num {
+    overflow: hidden;
+    margin-top: 7px;
+  }
+
+  .list_num span {
+    font-size: 12px;
+    color: #666;
+    float: left;
+  }
+
+  .list_view {
+    float: right;
+  }
+
+  .list_view a {
+    font-size: 12px;
+    color: #666666;
+    margin-left: 10px;
+  }
+
+  .list_view span {
+    font-size: 12px;
+    color: #666666;
+    margin-left: 10px;
+  }
+
+  .list_view a img {
+    padding-bottom: 3px;
+    margin-right: 3px;
+  }
+
+  .list_li li:last-child {
+    border: none;
+  }
+}
+
+.job-index-search-box{
+  position:absolute;
+  height:100%;
+  box-sizing:border-box;
+}
+.job-index-search{
+    position:relative;
+    height:44px;
+    width:100%;
+    background-color:#fff;
+    .job-index-search-left{
+      @extend .job-index-search-box;
+      left:0;
+      top: 0;
+      width:80px;
+      .select-box{
+        width:68px;
+        margin:11px 5px;
+        border:none;
+        outline: none;
+        color:#ff8903;
+      }
+    }
+    .job-index-search-right{
+      @extend .job-index-search-box;
+      right:0;
+      top: 0;
+      width:50px;
+      .icon-baoming{
+        color:#ff8903;
+        display:inline-block;
+        margin-top:6px;
+        margin-left:18px;
+        font-size:22px;
+      }
+    }
+    .job-index-search-center{
+      box-sizing:border-box;
+      padding:10px 50px 10px 80px;
+
+      .search-box{
+        position:relative;
+        width:100%;
+        height:24px;
+        overflow:hidden;
+
+
+        input[type=text]{
+          height:100%;
+          width:100%;
+          box-sizing:border-box;
+          font-size:12px;
+          border:none;
+          padding:0 10px;
+          outline: none;
+          background-color:#eee;
+          color:#999;
+          border-radius: 22px;
+        }
+      }
+    }
+  }
+
+  .job-index-list_top{
+    padding:10px 0;
+    border-bottom:1px solid #f0f0f1;
+    @extend %clearfix;
+
+    .icon-box{
+      width:60px;
+      box-sizing:border-box;
+      float:left;
+    }
+    .list-text{
+      margin-left:60px;
+      p{
+        color:#999;
+        font-size:12px;
+
+        &.list-text-title{
+          color:#4a90e2;
+          font-size:14px;
+        }
+      }
+    }
+    .icon-box-background{
+      background-color:#ff8903;
+      width:38px;
+      height:38px;
+      border-radius:50%;
+      position:relative;
+      margin-left:14px;
+
+      .icon-shezhi:before{
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        color:#fff;
+        font-size:24px;
+      }
+    }
+  }

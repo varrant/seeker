@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?bfl8qx');
+  src:  url('../fonts/icomoon.eot?bfl8qx#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?bfl8qx') format('truetype'),
+    url('../fonts/icomoon.woff?bfl8qx') format('woff'),
+    url('../fonts/icomoon.svg?bfl8qx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+    &-file:before {
+        content: '\e901';
+    }
+    &-tel1:before {
+        content: "\e902";
+    }
+    &-cog:before {
+        content: "\e903";
+    }
+    &-loc:before {
+        content: "\e904";
+    }
+    &-tel2:before {
+        content: "\e905";
+    }
+    &-cart:before {
+        content: "\e906";
+    }
+    &-papers:before {
+        content: "\e907";
+    }
+    &-vol:before {
+        content: "\e908";
+    }
+    &-hand:before {
+        content: "\e909";
+    }
+    &-advantage:before {
+        content: "\e90a";
+    }
+    &-net:before {
+        content: "\e90b";
+    }
+    &-email:before {
+        content: "\e90c";
+    }
+    &-arrows:before {
+        content: "\e90d";
+    }
+    &-right:before {
+        content: "\e90f";
+    }
+    &-wrong:before {
+        content: "\e90e";
+    }
+    &-user:before {
+        content: "\e900";
+    }
+}
+

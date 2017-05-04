@@ -1,0 +1,24 @@
+/*意见反馈*/
+.feedback {
+  text-align: center;
+  padding-top: 280px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.feedback .tel {
+  font-size: 20px;
+  display: block;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  padding-right: 20px;
+}
+
+.feedback .tel_img {
+  display: block;
+  float: left;
+  .myicon{
+    font-size: 20px;
+  }
+}

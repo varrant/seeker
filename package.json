@@ -1,0 +1,45 @@
+{
+  "name": "suzhi_hunters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cooking watch -p",
+    "dist": "cooking build -p",
+    "copy": "cp favicon.ico ./subs/favicon.ico & cp MP_verify_mZEamtKOcYPFMR3U.txt ./subs/MP_verify_mZEamtKOcYPFMR3U.txt & cp ./src/images/share.png ./subs/static/share.png",
+    "deploy": "cooking build --no-color"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-component": "^0.9.1",
+    "cooking-vue2": "^0.3.0",
+    "eslint": "^3.16.1",
+    "eslint-config-elemefe": "^0.1.1",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-notify": "^3.0.0",
+    "vue-resource": "^1.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "commander": "^2.9.0",
+    "coordtransform": "^2.0.2",
+    "fastclick": "^1.0.6",
+    "jssha": "^1.6.0",
+    "mint-ui": "^2.2.1",
+    "moment": "^2.17.1",
+    "v-tap": "^2.2.2",
+    "viscroll": "^1.0.4",
+    "vue": "^2.1.10",
+    "vue-avatar": "^2.0.0",
+    "vue-router": "^2.2.1",
+    "vue-scroller": "^2.1.2",
+    "vue-touch": "^2.0.0-beta.4",
+    "vue-validator": "^3.0.0-alpha.2",
+    "vuex": "^2.2.1",
+    "vuex-router-sync": "^4.1.2",
+    "weixin-js-sdk": "^1.2.0"
+  }
+}

@@ -1,0 +1,119 @@
+.job-person-center{
+.order_center li{background:#fff;/*height:183px;*/padding-left:16px;margin-bottom:10px;}
+.order_center_main{height:60px;border-bottom:1px solid #eee;padding-top:16px;position:relative;}
+.order_center_main_word{float:left;}
+.order_center_main_word h3{font-size: 14px;font-weight: normal;color:#333;}
+.order_center_main_word h3 span{font-size: 11px;}
+.order_center_main_word p{font-size:12px;color:#666;}
+.order_center_main_word p span{padding-left:20px;}
+.order_center_main>span{position:absolute;right:16px;top:16px;font-size: 20px;color:#ff8903;}
+
+.order_center li {
+  background: #fff;
+  padding-left: 16px;
+  margin-bottom: 10px;
+  display:block;
+}
+
+.orderinfoBox {
+  .ipt_box4 {
+    width: 100%;
+    background-color: #ffffff;
+    .list_boder {
+      border-bottom:1px solid #eee;
+    }
+    .name {
+      float: left;
+      font-size: 15px;
+      line-height: 58px;
+      margin-left: 16px;
+      color: #333333;
+    }
+    .left {
+      float: left;
+      font-size: 13px;
+      color: #666666;
+      .head {
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(to bottom, #e7e7e7, #cbcbcb);
+        border-radius: 50%;
+        margin-top: 9px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.list_show_btn, .list_hide_btn {
+  text-align: center;
+  font-size: 14px;
+  color: #ff8903;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+  cursor: pointer;
+  span {
+    padding-left: 5px;
+    color: #999999;
+  }
+}
+
+.item{
+		padding:13px 15px; 
+		box-sizing:border-box;
+		background-color:#fff;
+		color: #333;
+		font-size:14px;
+	}
+
+.experience{
+	
+
+	.experience-list{
+		border-left:1px solid #d8d8d8;
+		position:relative;
+		padding-left:10px;
+		padding-bottom:20px;
+		
+		&:before{
+			content:"";
+			position: absolute;
+			left: -6px;
+			top: 6px;
+			width:12px;
+			height:12px;
+			border-radius:50%;
+			background-color:#ff8903;
+		}
+	}
+
+	.experience-list-title{
+      .post{
+      	display: inline-block;
+      	float:right;
+      	color:#eee;
+      }
+	}
+
+	.experience-list-con{
+	 padding-top:5px;
+      font-size:12px;
+      color:#999;
+	}
+
+	.experience-list-green{
+		padding-bottom:0;
+		&:before{
+			background-color:#6eb41e;
+		}
+		.experience-list-title{
+			color:#6eb41e;
+		}
+	}
+}
+
+}

@@ -1,0 +1,24 @@
+@import "./mixin.scss";
+
+.humres {
+  .mint-button--small {
+    height: 25px;
+    font-size: 10px;
+  }
+
+  // .mint-button--danger.is-plain {
+  //   border: 1px solid $orangeBackground;
+  //   color: $orangeBackground;
+  // }
+  .mint-button--default.is-plain{
+    border: 1px solid #f0851b;
+    color: #f0851b;
+  }
+
+  .font_color {
+    .mint-cell-text {
+      color: $fontBlue;
+      padding: 0;
+    }
+  }
+};

@@ -1,0 +1,15 @@
+/*****个人中心******/
+@import "./mixin.scss";
+.center{
+	.center_top{background-color:$orangeBackground; height:126px;}
+	.center_top_head{height:77px;border-bottom:1px solid rgba(255, 255, 255, 0.3);padding:0 7px 0 16px;padding-top:13px;position:relative;}
+	.center_img{width:50px;height:50px;border-radius:50%;overflow:hidden;float:left;margin-right:20px;}
+	.center_word{font-size: 15px;color:#fff;font-weight:normal; float:left;}
+	.center_word h3{margin-top:5px;}
+	.center_top_head_icon{position:absolute;right:10px;top:50%;margin-top:-8px;}
+	.center_top_head a{display:block;height:64px;}
+	.center_top_foot{height:48px;line-height:34px;color:#fff;font-size:14px;padding:0 7px 0 16px;}
+	.center_top_foot h3{float:left;}
+	.center_top_foot a{color:#fff;float:right;}
+	.center_top_foot a img{padding-bottom:3px;}
+}
